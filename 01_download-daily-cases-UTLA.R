@@ -34,17 +34,17 @@ cases_wide <- cases_long %>%
 
 # SAVE OUTPUT ------------------------------------------------------------------
 
-last_day <- names(cases_wide)[ncol(cases_wide)]
+# last_day <- names(cases_wide)[ncol(cases_wide)]
 
 readr::write_csv(cases_long, 
-                 paste0("data/processed/cases_long_", last_day, ".csv"))
+                 paste0("data/processed/cases_long.csv"))
 
 readr::write_csv(cases_wide, 
-                 paste0("data/processed/cases_wide_", last_day, ".csv"))
+                 paste0("data/processed/cases_wide.csv"))
 
 # DELETE OLD VERSIOSN ----------------------------------------------------------
-case_data_files <- list.files("data/processed/", 
-															pattern = ".csv",
-															full.names = T)
-to_delete <- case_data_files[!grepl(last_day, case_data_files)]
-file.remove(to_delete)
+# case_data_files <- list.files("data/processed/", 
+# 															pattern = ".csv",
+# 															full.names = T)
+# to_delete <- case_data_files[!grepl(last_day, case_data_files)]
+# file.remove(to_delete)
