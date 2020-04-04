@@ -10,6 +10,6 @@ Also shapefile file and population data for UTLAs are provided. To merge them wi
 the cases data use the `area_code` or `area_name` column.
 
 **Download links:**
-- [daily cases (long format)](https://github.com/claudiofronterre/covid19_dataUK/blob/master/data/processed/cases_long_2020-03-29.csv)
-- [daily cases (wide format)](https://github.com/claudiofronterre/covid19_dataUK/blob/master/data/processed/cases_wide_2020-03-29.csv)
+- [daily cases (long format)](https://github.com/claudiofronterre/covid19_dataUK/blob/master/data/processed/cases_long.csv)
+- [daily cases (wide format)](https://github.com/claudiofronterre/covid19_dataUK/blob/master/data/processed/cases_wide.csv)
 - [UTLA boundaries and population (geopackage)](https://github.com/claudiofronterre/covid19_dataUK/blob/master/data/processed/geodata/utlas_pop.gpkg)
