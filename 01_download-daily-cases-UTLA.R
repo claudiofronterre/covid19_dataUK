@@ -21,7 +21,6 @@ names(cases)[1:2] <- c("area_code", "area_name")
 
 # Convert to long format and 
 cases_long <- cases %>% 
-  select(-`NHS region`, - `Region (Governement)`) %>% 
   filter(area_name != "England") %>% 
   tidyr::gather(key = "date", value = "cum_cases", -area_code, -area_name)
 
